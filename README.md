@@ -79,6 +79,7 @@ Linux Dash 没有任何安全或身份验证功能
 **强烈建议** 在Linux Dash 的基础上添加安全措施保护
 
 #### 第三步: 启动 Linux Dash
+
 <h6 align="center">
 Linux Dash 能够运行在: <u>Node.js</u>, PHP, Go, 和 Python.
 <br/>
@@ -102,15 +103,21 @@ node server/
 
 默认端口是80 需要改变端口去 `server/index.js` 的文件修改端口号.
 
-<br/>
+
+
 ##### PHP
+
 1. 启动你的 `exec`, `shell_exec`, 和 `escapeshellarg` 功能模块
+
 2. 重启你的web服务器 (Apache, nginx, etc.)
+
   - For PHP + Apache setup follow the [Digital Ocean tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-linux-dash-on-ubuntu-14-04).
+  
   - For help with nginx setup, see [this gist](https://gist.github.com/sergeifilippov/8909839) by [@sergeifilippov](https://github.com/sergeifilippov).
 
-<br/>
+
 ##### Go
+
 进入 `linux-dash/server` 的目录 并运行
 ```
 go run index.go
@@ -119,6 +126,7 @@ go run index.go
 To build a binary, run `go build && ./server -h`. See [@tehbilly](https://github.com/sergeifilippov)'s notes [here](https://github.com/afaqurk/linux-dash/pull/281) for binary usage options
 
 ##### Python
+
 运行 `./python-server.py` 默认端口是80 需要改变端口去 `python-server.py ` 的文件修改端口号.
 
 ## 支持
